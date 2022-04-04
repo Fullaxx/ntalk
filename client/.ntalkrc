@@ -1,0 +1,45 @@
+# This is ntalk configuration file
+# Lines started with '#' are treated as comments
+# WARNING: Dont use spaces after '='
+
+# Nick
+N=ntalker
+
+# Server address
+H=127.0.0.1
+
+#-----------------------------------------------
+# Colors
+# Structure: index; text color; background color
+# 1; yellow; black
+# 2; white; black
+# 3; white; blue
+# 4; green; black
+# 5; white; red
+
+# Your's text scheme
+C:Y=1
+
+# Others' text scheme
+C:O=2
+
+# Nicknames' color
+C:N=2
+
+# '<' & '>' color
+C:B=4
+
+# "status bar" color
+C:S=3
+
+# ----------------------------------------------
+# Messages
+
+# Message sent when leaving
+M:L=Leaving...
+
+# Message sent when 'away'
+M:A=I'm busy!
+
+
+# End of configuration file

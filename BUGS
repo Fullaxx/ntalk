@@ -1,0 +1,7 @@
+You may have several problems running ntalk in a terminal emulator under
+XWindows. That's because some terminal emulators cannot correctly
+cooperate with ncurses library. So, firstly try
+to run ntalk under console. If it works try to use
+different terminal emulators.
+
+It works very well with - for instance - rxvt and Eterm.

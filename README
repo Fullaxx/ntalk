@@ -1,0 +1,40 @@
+ntalk - Ncurses Talk
+====================
+
+ REQUIREMENTS
+ This version of ntalk-client requires ntalk-server 1.0.0 or later.
+ 
+ DESCRIPTION
+ 
+ Ntalk is a chat application. Is is designed to be much more
+ friendly than Unix talk and provide nice console interface.
+ You will need ntalks (ntalk server) to run ntalk. You
+ can download it from ntalk homepage (see below).
+ I also provide Kntalk, a KDE ntalk client for the X Window
+ System. Visit my web page for details.
+ 
+ CONFIGURATION
+ 
+ Ntalk uses .ntalkrc configuration file. If you already used
+ ntalk, you can find it in your home directory. Otherwise,
+ a sample one is provided with this package. Some options
+ are saved by ntalk itself (nick, server address), other
+ you have to change by editing your configuration file.
+ Option 'body' (value) is placed after the '=' sign. 
+ You should not change the data before that sign, because
+ ntalk won't be able to read it. But if you do so, it won't
+ cause crash (or other problem), the option will be just
+ skipped.
+
+ INFORMATION
+
+ Author   : Krzysztof Czuba <kab@interia.pl>
+ Homepage : http://sourceforge.net/projects/ntalk/
+ 
+ This program is free software which I release
+ under the GNU General Public License. Read the
+ COPYING file for more info.
+  
+ Bug reports, suggestions, patches are welcome.
+ Please send them to kab@interia.pl.
+ For information about instalation read INSTALL.

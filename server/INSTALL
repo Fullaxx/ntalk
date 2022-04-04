@@ -1,0 +1,37 @@
+
+  ntalk instalation
+ ===================
+ 
+ Just type:
+   % tar xvfz ntalk-x.x.tar.gz
+   % make
+   % make install
+   
+ To run:
+   % ./ntalk
+   
+ or:
+   % ./ntalk -h (server host)
+   
+ For help:
+   % ./ntalk -?
+   
+
+
+ WARNING: I recived a message, that sometimes ntalk doesn't
+ create its configuration file correctly. If you have the
+ same problem, create manually a .ntalkrc file in your
+ home directory. The file should look like this:
+ 
+ <---cut here--->
+ 
+ # these are comment
+ # nickname:
+ 
+ N:ntalker
+ 
+ # server address:
+ 
+ H:127.0.0.1
+ 
+ <---cut here--->

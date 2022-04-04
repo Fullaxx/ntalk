@@ -1,0 +1,112 @@
+1.0.0
+-----
+* Minor fixes so that it will compile with modern compilers.
+
+ 0.6.1
+-------
+
+* fixed crash after server shutdown
+* added command "/sclear"
+
+server:
+* fixed bug which cause incorrect response
+  fot 'online' command
+* core improvements
+
+ 0.6
+-----
+
+* completly rewritten in C++
+* now using C++ string class
+* new communication model (similar to IRC)
+* new command (/whois) added
+* improved configuration file handling
+* gethostbyname() support added
+* INSTALL update
+* UI fixes
+
+server:
+* completly rewritten in C++
+* new communication model
+* completly new user management system based on lists
+
+ 0.4.5
+-------
+
+* added window with online users' nicknames list
+  (For now it is not configurable, so if you  don't 
+  like it just use 0.4.2 version)
+* removed option '/online', because it's
+  "automatic" now :)
+
+ 0.4.2
+-------
+
+* removed usleep instruction, so the screen is updated 
+  immediately (it was updated every 0.5 second before)
+* #define VERSION ".." added 
+* updated help, because I have implemented command /about, 
+  but forgot to add it to command list :)
+* corrected default server address (127.0.0.1)
+* updated README file
+
+ 0.4.1
+-------
+
+* removed change_nick() function, so you can't change
+  your nick during the session. I decided to remove
+  this function, because it caused ugly bug, which
+  was difficult to fix for me.
+* little code cleaning
+* updated documentation
+
+ 0.4
+-----
+
+* added "-lsocket -lnsl" to the Makefile, so
+  that the program compiles under Solaris (th.fischer@gmx.net)
+* added target "clean" to Makefile (th.fischer@gmx.net)  
+* changed "ncurses/ncurses.h" to "ncurses.h"
+* now ntalk uses uid for initial nick (kris@unix.sbg.ac.at)
+* 'security' option - 2 users can't connect with
+  the same nickname
+* /online command added. Use it to check who's online
+* 'away' mode added
+* config file created; nick and server address
+  are now saved in ~/.ntalkrc file
+* server: fixed small bug which causes, that when
+  a client was killed server didn't decrease
+  clients number
+
+ 0.3.1 
+-------
+(First public release)
+
+* big bug fixed (input text doesn't seem to
+  disappear now when the main 'window' is scrolling)
+* added feature that shows how many users are online 
+* general code cleaning
+
+ 0.3
+-----
+
+* added built-in mini-help
+* 'syntax highlighting' improved
+* added 3 new user commands:
+  - /server which shows server version etc.
+  - /time shows current time
+  - /nick changes your nickname
+* added join and leave notification ('j.smith joined at...')
+* bugfixes
+
+
+ 0.2
+-----
+
+* changed one-char command names to full
+* fixed parse_command()
+* replaced fork() with threads, so its working correctly 
+  now (one process writes on the screen)
+* fixed 'syntax highlighting'
+* small improvments (i.e you can't now enter too long or short nick)
+* bugfixes...
