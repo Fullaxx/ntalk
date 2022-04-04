@@ -27,4 +27,3 @@ install:
 
 clean:
 	rm -f ntalks
-	rm -f /usr/local/bin/ntalks
