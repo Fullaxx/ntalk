@@ -611,8 +611,16 @@ int main(int argc, char *argv[])
 
     while((opt = getopt(argc, argv, "n:h:v?")) != -1)
     {
-	if(opt == 'h' && optarg != "") tmpaddr = optarg;
-	else if(opt == 'n' && optarg != "")
+	if(opt == 'h')
+	{
+		if(strlen(optarg) < 1)
+		{
+		cout << "hostname requires an argument!\n";
+		exit(0);
+	    }
+		tmpaddr = optarg;
+	}
+	else if(opt == 'n')
 	{
 	    if((strlen(optarg) > 21) || (strlen(optarg) < 2))
 	    {
